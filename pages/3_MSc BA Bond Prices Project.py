@@ -8,7 +8,7 @@ from sklearn import svm, preprocessing
 st.subheader("**Data Preprocessing and Training a Machine Learning Model: Predicting Bond Prices**")
 st.markdown("---")
 
-bonds_dataset = "/Users/saoirse/Desktop/datasets/trade_combined.csv"
+bonds_dataset = "datasets/trade_combined.csv"
 df = pd.read_csv(bonds_dataset)
 
 st.write("The first 10 rows of the dataset to give an idea of it")

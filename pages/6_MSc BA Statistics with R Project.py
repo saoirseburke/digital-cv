@@ -36,10 +36,8 @@ The collected data are stored in the file “adherenceScore.csv”.
         
         """)
 
-adherence_score = "/Users/saoirse/Desktop/datasets/AdherenceScore.csv"
-
-
-df = pd.read_csv(adherence_score)
+adherence_dataset = "datasets/AdherenceScore.csv"
+df = pd.read_csv(adherence_dataset)
 
 st.write("Overview of the data")
 st.dataframe(df.head(11))
