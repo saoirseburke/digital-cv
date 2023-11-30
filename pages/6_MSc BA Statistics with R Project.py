@@ -8,7 +8,8 @@ from scipy.stats import ttest_1samp
 import subprocess
 
 
-st.subheader("**Statistical Analysis with R**", divider = "rainbow")
+st.subheader("**Statistical Analysis with R**")
+st.markdown("---")
 
 st.text("""
 

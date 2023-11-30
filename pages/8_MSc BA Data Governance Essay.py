@@ -1,12 +1,7 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 from pathlib import Path
 from PIL import Image
-
-image1 = Image.open("/Users/saoirse/Desktop/digital_cv/assets/image1.png")
-image2 = Image.open("/Users/saoirse/Desktop/digital_cv/assets/image2.png")
-
 
 st.header("Data Governance -- A Delicate Ecosystem Which Can Easily Be Tainted")
 
@@ -68,14 +63,9 @@ illustrate the interactions between soft governance, hard governance,
 policy and ethics.
         
 """)
-        
-st.image(image1, caption='Figure 1', use_column_width=True)
 
 st.write("""
 
-*Figure 1*. A General Scheme for the Meta-Rule of Law Adapted from "Law,
-Socio-Legal Governance, the Internet of Things, and Industry 4.0: A
-Middle-Out/Inside-Out Approach" (Casanovas *et al.* 2022) 
 
 These interactions illustrate the idea that soft governance instruments
 take a more holistic approach to governance, often incorporating ethical
@@ -139,19 +129,11 @@ organisation's need to use someone's data may take precedence over that
 person's right to have their data erased and the organisation can refuse
 a request that is deemed unnecessary or unreasonable (Politou *et al.*
 2018). Grey areas can arise, and the balance of power is often tipped
-towards the private platforms. As the graph below shows, delisting rates
-differ from host to host.
+towards the private platforms. Delisting rates can differ from host to host.
 
 """)      
 
-st.image(image2, caption='Figure 2', use_column_width=True)
-
 st.write("""
-
-*Figure 2*. Top Hostnames Requested for Delisting During May 2014-May
-2019 Adapted from "Five Years of the Right to be Forgotten" (Bertram *et
-al.* 2019) 
-
 
 As data citizens we have this privacy right, but it is not guaranteed to
 be upheld. This narrative aligns with Floridi's thesis on balancing the

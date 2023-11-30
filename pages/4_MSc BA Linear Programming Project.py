@@ -1,7 +1,9 @@
 import streamlit as st  
 from scipy.optimize import linprog
 
-st.subheader("Linear Programming applied to Real World Problem", divider="rainbow")
+st.subheader("**Linear Programming applied to Real World Problem**")
+st.markdown("---")
+
 st.text("""
          Mazda Motor Corporation produces three models of its CX series: Mazda CX-3, Mazda CX-5, and Mazda CX-9
          Market projections indicate an expected monthly demand of at least: 3500 cars of the CX-3 model

@@ -13,7 +13,8 @@ from pgmpy.models import BayesianModel
 import matplotlib.pyplot as plt
 import networkx as nx
 
-st.subheader("Building a Bayesian Network on a Real-Life Scenario", divider="rainbow")
+st.subheader("**Building a Bayesian Network on a Real-Life Scenario**")
+st.markdown("---")
 
 st.text("""Let’s suppose that a UL student is taking the CS6501 module “Machine Learning and Applications”
         The student’s grade for this module will depend on their intelligence (low or high),
