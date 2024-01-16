@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn import svm, preprocessing
 
-st.subheader("**Data Preprocessing and Training a Machine Learning Model: Predicting Bond Prices**")
+st.subheader("** MSc BA: Data Preprocessing and Training a Machine Learning Model: Predicting Bond Prices**")
 st.markdown("---")
 
 bonds_dataset = "datasets/trade_combined.csv"

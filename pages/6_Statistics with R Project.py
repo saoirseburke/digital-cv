@@ -8,7 +8,7 @@ from scipy.stats import ttest_1samp
 import subprocess
 
 
-st.subheader("**Statistical Analysis with R**")
+st.subheader("**MSc BA: Statistical Analysis with R**")
 st.markdown("---")
 
 st.text("""

@@ -3,7 +3,7 @@ import streamlit as st
 from pathlib import Path
 from PIL import Image
 
-st.header("Data Governance -- A Delicate Ecosystem Which Can Easily Be Tainted")
+st.header("MSc BA: Data Governance -- A Delicate Ecosystem Which Can Easily Be Tainted")
 
 st.subheader("Introduction")
 

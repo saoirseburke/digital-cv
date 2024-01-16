@@ -1,7 +1,7 @@
 import streamlit as st  
 from scipy.optimize import linprog
 
-st.subheader("**Linear Programming applied to Real World Problem**")
+st.subheader("** MSc BA: Linear Programming applied to Real World Problem**")
 st.markdown("---")
 
 st.text("""
