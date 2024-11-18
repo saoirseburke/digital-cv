@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Saoirse Burke - Digital CV</title>
     <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@latest/build/stlite.js"></script>
 </head>
 <body>
     <div id="root"></div>
     <script>
         stlite.mount({
-            entrypoint: "app.py",
+            entrypoint: "homepage.py",
             files: {
-                "app.py": `
+                "homepage.py": `
 import streamlit as st
-st.title("Hello, World!")
+st.title("Saoirse Burke - Digital CV")
+# --- GENERAL SETTINGS ---
+PAGE_TITLE = "Digital CV | Saoirse Burke"
+NAME = "Saoirse Burke"
+DESCRIPTION = "Data Analytics Graduate - EY Cork"
+EMAIL = "saoirse_burke@hotmail.com"
+LINKEDIN = "https://www.linkedin.com/in/saoirse-burke/"
                 `
             }
         }, document.getElementById("root"));
