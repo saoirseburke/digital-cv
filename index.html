@@ -21,6 +21,15 @@ NAME = "Saoirse Burke"
 DESCRIPTION = "Data Analytics Graduate - EY Cork"
 EMAIL = "saoirse_burke@hotmail.com"
 LINKEDIN = "https://www.linkedin.com/in/saoirse-burke/"
+
+# --- PAGE CONFIGURATION ---
+st.set_page_config(page_title=PAGE_TITLE)
+
+# --- HERO SECTION ---
+st.title(NAME)
+st.write(DESCRIPTION)
+st.write(f"✉️ Email: {EMAIL}")
+st.write(f"🤝 [Connect on LinkedIn]({LINKEDIN})")
                 `
             }
         }, document.getElementById("root"));
