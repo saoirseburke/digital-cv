@@ -14,9 +14,11 @@
             entrypoint: "homepage.py",
             files: {
                 "homepage.py": `
-
+import os
 import streamlit as st
-st.image("assets/profilepic.png", width=200)
+file_path = "assets/profilepic.png"
+st.write(f"Resolved path: {os.path.abspath(file_path)}")
+st.image(file_path, width=200)
 st.title("Saoirse Burke - Digital CV")
 st.write("Data Analytics Graduate - EY Cork")
 st.write(f"✉️ Email: saoirse_burke@hotmail.com")
