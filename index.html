@@ -14,12 +14,24 @@
             files: {
                 "homepage.py": `
 import streamlit as st
+import base64
+from io import BytesIO
 
+# Base64 string for your image (replace with your actual base64 string)
+base64_string = "iVBORw0KGgoAAAANSUhEUgAAAuoAAALqCAYAAABjZ3GmAAAMP2lDQ1BJQ0MgUHJvZmlsZQAASImVVwdYU8kWnltSIbQAAlJCb4KAlABSQmgBpBfBRkgChBJjIIjY0UUF1y4WsKGrIoodEDtiZxHsfVFEQVkXC3blTQrouq98b75v7vz3nzP/OXPuzL13AFA/xRWLc1ANAHJF+ZLYkADG2OQUBqkbUAAZaAIM2HF5eWJWdHQEgGWw/Xt5dxMgsvaag0zrn/3/tWjyBXk8AJBoiNP4ebxciA8BgFfyxJJ8AIgy3nxqvliGYQXaEhggxAtlOEOBK2U4TYH3yW3iY9kQNwNAVuVyJRkAqLVBnlHAy4Aaan0QO4n4QhEA6gyIfXNzJ/MhToXYBtqIIZbpM9N+0Mn4m2bakCaXmzGEFXORF3KgME+cw532f6bjf5fcHOmgDytYVTMlobGyOcO83c6eHC7DqhD3itIioyDWgviDkC+3hxilZkpDExT2qCEvjw1zBnQhduJzA8MhNoQ4WJQTGaHk09KFwRyI4QpBC4X5nHiI9SBeKMgLilPabJZMjlX6QuvSJWyWkr/Alcj9ynw9lGYnsJT6rzMFHKU+plaUGZ8EMRViiwJhYiTEahA75mXHhSttRhdlsiMHbSTSWFn8FhDHCkQhAQp9rCBdEhyrtC/NzRucL7Y5U8iJVOID+ZnxoYr8YM08rj"
+
+# Decode the base64 string into bytes
+image_data = base64.b64decode(base64_string)
+
+# Use BytesIO to turn the bytes into a file-like object
+image = BytesIO(image_data)
+
+# Display the image in Streamlit
 st.title("Saoirse Burke - Digital CV")
 st.write("Data Analytics Graduate - EY Cork")
 st.write(f"✉️ Email: saoirse_burke@hotmail.com")
 st.write(f"🤝 LinkedIn: https://www.linkedin.com/in/saoirse-burke/")
-st.image("profilepic.png", width=200)
+st.image(image, width=200)
                 `,
                 "profilepic.png": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuoAAALqCAYAAABjZ3GmAAAMP2lDQ1BJQ0MgUHJvZmlsZQAASImVVwdYU8kWnltSIbQAAlJCb4KAlABSQmgBpBfBRkgChBJjIIjY0UUF1y4WsKGrIoodEDtiZxHsfVFEQVkXC3blTQrouq98b75v7vz3nzP/OXPuzL13AFA/xRWLc1ANAHJF+ZLYkADG2OQUBqkbUAAZaAIM2HF5eWJWdHQEgGWw/Xt5dxMgsvaag0zrn/3/tWjyBXk8AJBoiNP4ebxciA8BgFfyxJJ8AIgy3nxqvliGYQXaEhggxAtlOEOBK2U4TYH3yW3iY9kQNwNAVuVyJRkAqLVBnlHAy4Aaan0QO4n4QhEA6gyIfXNzJ/MhToXYBtqIIZbpM9N+0Mn4m2bakCaXmzGEFXORF3KgME+cw532f6bjf5fcHOmgDytYVTMlobGyOcO83c6eHC7DqhD3itIioyDWgviDkC+3hxilZkpDExT2qCEvjw1zBnQhduJzA8MhNoQ4WJQTGaHk09KFwRyI4QpBC4X5nHiI9SBeKMgLilPabJZMjlX6QuvSJWyWkr/Alcj9ynw9lGYnsJT6rzMFHKU+plaUGZ8EMRViiwJhYiTEahA75mXHhSttRhdlsiMHbSTSWFn8FhDHCkQhAQp9rCBdEhyrtC/NzRucL7Y5U8iJVOID+ZnxoYr8YM08rj"
             }
